@@ -319,7 +319,7 @@ def datasetBuilding(config):
     return settingPath
 
 def takeEmbedding():
-    net = BertForMaskedLM.from_pretrained('bert-base-uncased')
+    net = BertForMaskedLM.from_pretrained('bert-base-multilingual-cased')
     embedding = net.bert.embeddings.word_embeddings
     return embedding
 
