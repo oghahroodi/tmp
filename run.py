@@ -257,7 +257,7 @@ def test(config):
         source = Tokenizer.convert_tokens_to_ids(source)
         
         print(idx)
-        print(detokenize(translate(source, Tokenizer), mapping), end=ed)
+        # print(detokenize(translate(source, Tokenizer), mapping), end=ed)
         
         l_pred = mySearcher.length_Predict(source)
         Answers = mySearcher.search(source)
